@@ -64,8 +64,12 @@ python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 python run.py
+```
 
-Abrir en navegador: http://127.0.0.1:5000
+Abrir en navegador:
+http://127.0.0.1:5000
+
+---
 
 ## Capturas
 
@@ -81,12 +85,18 @@ Abrir en navegador: http://127.0.0.1:5000
 ### Turno creado
 ![Turno creado](screenshots/turn-created.png)
 
+---
+
 ## Estado del proyecto
 
 Este proyecto es una versión demo pensada para portfolio y presentación.
 
 Puede evolucionar fácilmente a una solución completa para uso real en negocios.
 
+---
+
 ## Contacto
 
-Para consultas o implementaciones personalizadas comunicarse via mail: stefanodominguez@hotmail.com
+Para consultas o implementaciones personalizadas:
+
+stefanodominguez@hotmail.com
