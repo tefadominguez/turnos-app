@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card p-4 shadow-sm">
+    <h4>Registro</h4>
+
+    <form method="POST">
+        <div class="mb-3">
+            <input name="nombre" class="form-control" placeholder="Nombre">
+        </div>
+
+        <div class="mb-3">
+            <input name="email" class="form-control" placeholder="Email">
+        </div>
+
+        <div class="mb-3">
+            <input name="password" type="password" class="form-control" placeholder="Password">
+        </div>
+
+        <button class="btn btn-success w-100">Registrarse</button>
+    </form>
+
+</div>
+
+{% endblock %}

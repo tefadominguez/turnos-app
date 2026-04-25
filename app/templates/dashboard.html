@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="d-flex justify-content-between mb-3">
+    <a href="/crear" class="btn btn-primary">+ Nuevo Turno</a>
+    <a href="/logout" class="btn btn-danger">Logout</a>
+</div>
+
+<div class="card shadow-sm p-3">
+    <h5>Turnos</h5>
+
+    {% if turnos|length == 0 %}
+        <div class="alert alert-info mt-3">
+            No hay turnos cargados
+        </div>
+    {% else %}
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Cliente</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for t in turnos %}
+                <tr>
+                    <td>{{ t.fecha }}</td>
+                    <td>{{ t.hora }}</td>
+                    <td>{{ t.cliente }}</td>
+                    <td>
+                        <a href="/cancelar/{{t.id}}" class="btn btn-sm btn-warning">Cancelar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+
+</div>
+
+{% endblock %}
